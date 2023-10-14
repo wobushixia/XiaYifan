@@ -12,8 +12,7 @@
     }
 
     header {
-      background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-      padding: 20px;
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);      padding: 20px;
       position: fixed;
       top: 0;
       width: 100%;
@@ -57,8 +56,7 @@
     }
 
     footer {
-      background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-      padding: 10px;
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);      padding: 10px;
       text-align: center;
       color: #fff;
       position: fixed;
@@ -71,8 +69,28 @@
   color: #007bff;
 }
 
+nav ul li a.login_button {
+  background-color: #fff;
+  color: #6e57ee;
+  border: 2px solid #007bff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute; /* 设置按钮为绝对定位 */
+  top: 10px; /* 距离顶部的距离为 10px */
+  right: 50px; /* 距离右侧的距离为 10px */
+  border: none; /* 去除按钮的边框 */
+  cursor: pointer; /* 鼠标悬停时显示手型光标 */
+}
+
+nav ul li a.login_button:hover {
+  background-color: #6246ff;
+  color: #fff;
+}
+
 #remember:hover::after {
-  content: " remember me";
+  content: " By XiaYifan";
 }
 
   </style>
@@ -85,6 +103,7 @@
         <li><a href="#portfolio">作品集</a></li>
         <li><a href="#contact">联系我</a></li>
         <li><a href="first.html">文章目录</a></li>
+        <li><a class="login_button" href="login.html">登录</a></li>
       </ul>
     </nav>
   </header>
@@ -111,11 +130,14 @@
     <p>如果你对我的项目或者想法感兴趣，可以通过以下方式联系我：</p>
     <ul>
       <li>Email: 2143667276@qq.com</li>
+      <li>BiliBili: <a href="https://space.bilibili.com/286975446">space.bilibili.com/286975446</a></li>
     </ul>
   </section>
 
+  <div style="height: 300px;"></div>
+
   <footer>
-    <p id="remember">记住我</p>
+    <p id="remember">&copy</p>
   </footer>
 </body>
 </html>
